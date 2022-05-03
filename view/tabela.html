@@ -15,19 +15,25 @@
         <td>{release}</td>
         <td>{local}</td>
         <td>
-            <button type="button">Editar</button>
-          </td>
-          <td>
-            <button type="button">Remover</button>
+          <button
+          class="edit"
+          type="button"
+          onclick="location.href='?class=Form&method=editar&id={id}'"
+        >
+          Editar
+        </button>
+      </td>
+      <td>
         <button
+          class="remove"
           type="button"
           onclick="if(confirm('Deseja realmente apagar?'))
             location.href='?class=Tabela&method=remover&id={id}'"
         >
           Remover
         </button>
-          </td>
-      </tr>
-      {/linha}
-    </tbody>
-  </table>
+      </td>
+    </tr>
+    {/linha}
+  </tbody>
+</table>

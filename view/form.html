@@ -1,19 +1,32 @@
 <form method="post" action="?class=Form&method=salvar">
-
+    <input type="hidden" name="id" value="{id}" />
     <div>
-        <label for="titulo">Titulo:</label>
-        <input type="text" name="titulo" id ="titulo" required maxlength="150"/>
+      <label for="titulo">Titulo:</label>
+      <input
+        type="text"
+        name="titulo"
+        id="titulo"
+        required
+        maxlength="50"
+        value="{titulo}"
+      />
     </div>
     <div>
-        <label for="release">Release:</label>
-        <textarea name="release" id ="release" required></textarea>
+      <label for="release">Release:</label>
+      <textarea name="release" id="release" required>{release}</textarea>
     </div>
     <div>
-        <label for="local">Local:</label>
-        <input type="text" name="local" id ="Local" required maxlength="150" />
+      <label for="Local">Local:</label>
+      <input
+      type="text"
+      name="local"
+      id="local"
+      required
+      maxlength="50"
+      value="{local}"
+      />
     </div>
     <div>
-        <button type="submit">Salvar</button>
-      </div>
-</form>
-
+      <button type="submit">Salvar</button>
+    </div>
+  </form>
